@@ -1,0 +1,80 @@
+@font-face {
+  font-family: gtaFont;
+  src: url(./assets/pricedow.ttf);
+}
+
+body {
+  font-family: gtaFont;
+  font-size: 2em;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.gif-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  display: none;
+  z-index: 999;
+}
+
+.gif-container.given {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif-container.crash1 > .crash2,
+.gif-container.crash1 > .crash3,
+.gif-container.crash1 > .crash4 {
+  display: none;
+}
+
+.gif-container.crash2 > .crash1,
+.gif-container.crash2 > .crash3,
+.gif-container.crash2 > .crash4 {
+  display: none;
+}
+
+.gif-container.crash3 > .crash1,
+.gif-container.crash3 > .crash2,
+.gif-container.crash3 > .crash4 {
+  display: none;
+}
+
+.gif-container.crash4 > .crash1,
+.gif-container.crash4 > .crash2,
+.gif-container.crash4 > .crash3 {
+  display: none;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.car-key img {
+  width: 50px;
+  height: auto;
+}
+
+.car-key {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 998;
+}
+
+.yui-hand {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  position: absolute;
+}
