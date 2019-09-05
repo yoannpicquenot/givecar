@@ -1,4 +1,8 @@
 (() => {
+  const params = new URL(location.href).searchParams;
+  if (params.has('name')) {
+    document.querySelector('.name').innerHTML = params.get('name');
+  }
   const carKey = document.querySelector('.car-key');
   const yuiHand = document.querySelector('.yui-hand');
   let dragging = false;
